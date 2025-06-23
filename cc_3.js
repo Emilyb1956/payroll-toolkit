@@ -1,4 +1,3 @@
-// Step 2: Create Customer Records
 const customers = [
   {
     name: "Jada Nash",
@@ -17,7 +16,6 @@ const customers = [
   }
 ];
 
-// Step 3: Add and Remove Data
 customers.push({
   name: "Daniel Lee",
   email: "daniel.lee@usf.edu",
@@ -26,11 +24,9 @@ customers.push({
 
 customers.shift(); // Removes Jada Nash
 
-// Step 4: Update Customer Info
 customers[0].email = "zosha.chung23@usf.edu"; // Update Zosha's email
 customers[1].purchases.push("Highlighters"); // Add purchase to Jenique
 
-// Step 5: Display Customer Info
 customers.forEach(customer => {
   console.log(`${customer.name} (${customer.email}) has made ${customer.purchases.length} purchases.`);
 });
